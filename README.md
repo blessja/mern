@@ -1,21 +1,11 @@
 <div align="center">
 
-<!-- Title: -->
-  <a href="https://mernauth.rohittewari.live" target="_blank">
-    <img src="https://user-images.githubusercontent.com/75976169/207795985-7582432a-3f1f-4600-9078-57d312267229.png" height="150" alt="Logo with shadow">
-  </a>
-
 <!-- Short description: -->
-<h2>Ultimate MERN Stack Authentication Boilerplate for production use</h2>
+<h2>MERN Stack</h2>
 
 <!-- Labels: -->
   <div>
-    <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102" height="20">
-  <a href="https://mernauth.rohittewari.live" target="_blank">
-    <img src="https://img.shields.io/website-up-down-green-red/https/mernauth.rohittewari.live.svg" height="20" alt="Website up">
-  </a>
-  <img src="https://img.shields.io/github/repo-size/rtewari056/mern-stack-authentication-boilerplate.svg?label=Repo%20size" height="20" alt="Repo size">
-  <img src="https://img.shields.io/github/languages/top/rtewari056/mern-stack-authentication-boilerplate" height="20" alt="GitHub top language">
+
   <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/rtewari056/mern-stack-authentication-boilerplate" height="20" alt="MIT License">
   </a>
@@ -64,6 +54,7 @@ This application is deployed on DigitalOcean. Please check it out :smile: [here]
 - [x] Toast notifications for user actions.
 
 ## 📁 Project structure
+
 ```terminal
 ├── client/
 │   ├── public/
@@ -154,6 +145,7 @@ git clone https://github.com/rtewari056/mern-stack-authentication-boilerplate.gi
 ```
 
 ### 2. Navigate into repo:
+
 ```bash
 cd mern-stack-authentication-boilerplate
 ```
@@ -174,7 +166,7 @@ SMTP_USER=<YOUR_SMTP_SERVER_USER_NAME>
 SMTP_PASSWORD=<YOUR_SMTP_SERVER_PASSWORD>
 EMAIL_FROM=<EMAIL_ADDRESS_OF_SENDER>
 
-# Now go to client folder and put your cloudinary creadentials 
+# Now go to client folder and put your cloudinary creadentials
 REACT_APP_CLOUDINARY_CLOUD_NAME=<YOUR_CLOUDINARY_CLOUD_NAME>
 REACT_APP_CLOUDINARY_UPLOAD_PRESET=<YOUR_CLOUDINARY_UPLOAD_PRESET>
 ```
@@ -188,6 +180,7 @@ npm install # Client dependencies
 ```
 
 ### 4. Run project:
+
 In the `root` directory, open two terminal sessions and run both commands separately:
 
 ```bash
