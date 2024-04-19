@@ -8,3 +8,8 @@
   height: 450px;
   padding-top: 50px;
 }
+.btn_link {
+  border-radius: 10px;
+  border: 0.7px solid #a9aeb8;
+  background: #fff;
+}

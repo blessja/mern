@@ -9,13 +9,14 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
- 
   "keywords": [],
   "author": "",
   "license": "ISC",
-
-
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "bcryptjs": "^2.4.3",
     "concurrently": "^8.2.2",
     "dotenv": "^16.0.3",

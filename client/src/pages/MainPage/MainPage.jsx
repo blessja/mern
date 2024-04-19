@@ -5,9 +5,17 @@ import car from "../../assets/car.jpg";
 import proPic from "../../assets/pro_pic.png";
 import eye from "../../assets/eye.png";
 import share from "../../assets/share-icon.png";
+import sarawest from "../../assets/Sarah_West.png";
+import ronal from "../../assets/Ronal.png";
+import joseph from "../../assets/Joseph.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendarDay,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+
 import { Image } from "react-bootstrap";
 import "./MainPage.css";
-import { FaEye } from "react-icons/fa";
 
 const MainPage = () => {
   return (
@@ -100,10 +108,7 @@ const MainPage = () => {
                       <div class="entry-header mb-3">
                         <ul class="entry-meta list-unstyled d-flex mb-2">
                           <li>
-                            <a
-                              class="link-primary text-decoration-none"
-                              href="#!"
-                            >
+                            <a class="link-dark text-decoration-none" href="#!">
                               ✍️ Article
                             </a>
                           </li>
@@ -141,8 +146,9 @@ const MainPage = () => {
                         <p className="myText fs-6 pt-3">Sarthak Kamra</p>
                       </div>
                       <div className="views d-flex justify-content-between align-items-center">
-                        <div className="j">
+                        <div className="">
                           <img
+                            className="pe-2"
                             style={{ width: 50, height: 50 }}
                             src={eye}
                             alt="eye"
@@ -176,10 +182,7 @@ const MainPage = () => {
                       <div class="entry-header mb-3">
                         <ul class="entry-meta list-unstyled d-flex mb-2">
                           <li>
-                            <a
-                              class="link-primary text-decoration-none"
-                              href="#!"
-                            >
+                            <a class="link-dark text-decoration-none" href="#!">
                               🔬️ Education
                             </a>
                           </li>
@@ -209,7 +212,7 @@ const MainPage = () => {
                         <div className="profile">
                           <Image
                             roundedCircle
-                            src={proPic}
+                            src={sarawest}
                             alt=""
                             style={{ width: 48, height: 48 }}
                           />
@@ -219,6 +222,165 @@ const MainPage = () => {
                       <div className="views d-flex justify-content-between align-items-center">
                         <div className="j">
                           <img
+                            className="pe-2"
+                            style={{ width: 50, height: 50 }}
+                            src={eye}
+                            alt="eye"
+                          />
+                          <span>1.4k views</span>
+                        </div>
+                        <button className="btn border-0">
+                          <img
+                            style={{ width: 30, height: 30 }}
+                            src={share}
+                            alt="share icon"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 pt-3  ">
+                <article>
+                  <div class="card border-0">
+                    <img
+                      style={{ height: "220px" }}
+                      class="img-fluid bsb-scale bsb-hover-scale-up"
+                      loading="lazy"
+                      src={car}
+                      alt="Nature"
+                    />
+
+                    <div class="card-body   bg-white p-4">
+                      <div class="entry-header mb-3">
+                        <ul class="entry-meta list-unstyled d-flex mb-2">
+                          <li>
+                            <a class="link-dark text-decoration-none" href="#!">
+                              🗓️ Meetup
+                            </a>
+                          </li>
+                        </ul>
+                        <h2 class="card-title entry-title h4 mb-0">
+                          <a class="link-dark text-decoration-none" href="#!">
+                            Finance & Investment Elite Social Mixer @Lujiazui
+                          </a>
+                        </h2>
+                        <ul className=" d-flex list-unstyled align-items-center gap-5 pt-2">
+                          <li className=" gap-1 align-items-center d-flex">
+                            <FontAwesomeIcon icon={faCalendarDay} /> Fri, 12
+                            Oct, 2018
+                          </li>
+                          <li className=" gap-1 align-items-center d-flex">
+                            <FontAwesomeIcon icon={faLocationDot} /> Ahmedabad,
+                            India
+                          </li>
+                        </ul>
+                        <button
+                          style={{ width: "100%", color: "#E56135" }}
+                          className="btn_link btn mb-4 "
+                        >
+                          Visit Website
+                        </button>
+                      </div>
+                      <p
+                        style={{ maxWidth: 692 }}
+                        class="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
+                      >
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus eaque reprehenderit quos hic enim,
+                        aspernatur praesentium quod ullam sit ipsa libero eos
+                        officia. Provident eaque magnam officiis quis modi,
+                        ipsum aspernatur odio cum facere ducimus temporibus
+                        iste. Illum modi cupiditate nulla obcaecati, unde totam
+                        placeat doloribus. Saepe facere sequi cumque?
+                      </p>
+                    </div>
+                    <div class="bg-white d-flex justify-content-between align-items-center  p-2">
+                      <div className="profile-info d-flex align-items-center gap-2">
+                        <div className="profile">
+                          <Image
+                            roundedCircle
+                            src={ronal}
+                            alt=""
+                            style={{ width: 48, height: 48 }}
+                          />
+                        </div>
+                        <p className="myText fs-6 pt-3">Ronal Jones</p>
+                      </div>
+                      <div className="views d-flex justify-content-between align-items-center">
+                        <div className="j">
+                          <img
+                            className="pe-2"
+                            style={{ width: 50, height: 50 }}
+                            src={eye}
+                            alt="eye"
+                          />
+                          <span>1.4k views</span>
+                        </div>
+                        <button className="btn border-0">
+                          <img
+                            style={{ width: 30, height: 30 }}
+                            src={share}
+                            alt="share icon"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div style={{ height: "296px" }} class="col-12 pt-3  ">
+                <article>
+                  <div class="card border-0">
+                    <div class="card-body   bg-white p-4">
+                      <div class="entry-header mb-3">
+                        <ul class="entry-meta list-unstyled d-flex mb-2">
+                          <li>
+                            <a class="link-dark text-decoration-none" href="#!">
+                              💼️ Job
+                            </a>
+                          </li>
+                        </ul>
+                        <h2 class="card-title entry-title h4 mb-0">
+                          <a class="link-dark text-decoration-none" href="#!">
+                            Software Developer
+                          </a>
+                        </h2>
+                        <ul className=" d-flex list-unstyled align-items-center gap-5 pt-2">
+                          <li className=" gap-1 align-items-center d-flex">
+                            <FontAwesomeIcon icon={faCalendarDay} /> Innovaccer
+                            Analytics Private Ltd.
+                          </li>
+                          <li className=" gap-1 align-items-center d-flex">
+                            <FontAwesomeIcon icon={faLocationDot} /> Ahmedabad,
+                            India
+                          </li>
+                        </ul>
+                        <button
+                          style={{ width: "100%", color: "#02B875" }}
+                          className="btn_link btn mb-1 "
+                        >
+                          Apply on Timesjobs
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bg-white d-flex justify-content-between align-items-center  p-2">
+                      <div className="profile-info d-flex align-items-center gap-2">
+                        <div className="profile">
+                          <Image
+                            roundedCircle
+                            src={joseph}
+                            alt=""
+                            style={{ width: 48, height: 48 }}
+                          />
+                        </div>
+                        <p className="myText fs-6">Joseph Gray</p>
+                      </div>
+                      <div className="views d-flex justify-content-between align-items-center">
+                        <div className="j">
+                          <img
+                            className="pe-2"
                             style={{ width: 50, height: 50 }}
                             src={eye}
                             alt="eye"
