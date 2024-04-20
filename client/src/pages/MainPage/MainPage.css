@@ -13,3 +13,22 @@
   border: 0.7px solid #a9aeb8;
   background: #fff;
 }
+
+.input-text {
+  outline: none;
+  border: none;
+}
+
+.text-recommended {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.following {
+  background: #edeef0;
+}

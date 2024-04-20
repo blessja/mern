@@ -20,7 +20,7 @@ const Card = () => {
   return (
     <>
       <div class="col mx-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
-        <div class="col-12 ">
+        <div class="col-12 border border-1 rounded rounded-2 ">
           <article>
             <div class="card border-0">
               <img
@@ -76,7 +76,7 @@ const Card = () => {
                   <div className="">
                     <img
                       className="pe-2"
-                      style={{ width: 50, height: 50 }}
+                      style={{ width: 30, height: 30 }}
                       src={eye}
                       alt="eye"
                     />
@@ -84,7 +84,7 @@ const Card = () => {
                   </div>
                   <button className="btn border-0">
                     <img
-                      style={{ width: 30, height: 30 }}
+                      style={{ width: 20, height: 20 }}
                       src={share}
                       alt="share icon"
                     />
@@ -94,9 +94,9 @@ const Card = () => {
             </div>
           </article>
         </div>
-        <div class="col-12 pt-3 ">
+        <div class="col-12 mt-4 border border-1 rounded rounded-2">
           <article>
-            <div class="card border-0">
+            <div class="card border-0 ">
               <img
                 style={{ height: "220px" }}
                 class="img-fluid bsb-scale bsb-hover-scale-up"
@@ -141,7 +141,7 @@ const Card = () => {
                       roundedCircle
                       src={sarawest}
                       alt=""
-                      style={{ width: 48, height: 48 }}
+                      style={{ width: 30, height: 30 }}
                     />
                   </div>
                   <p className="myText fs-6 pt-3">Sarah West</p>
@@ -150,7 +150,7 @@ const Card = () => {
                   <div className="j">
                     <img
                       className="pe-2"
-                      style={{ width: 50, height: 50 }}
+                      style={{ width: 30, height: 30 }}
                       src={eye}
                       alt="eye"
                     />
@@ -158,7 +158,7 @@ const Card = () => {
                   </div>
                   <button className="btn border-0">
                     <img
-                      style={{ width: 30, height: 30 }}
+                      style={{ width: 20, height: 20 }}
                       src={share}
                       alt="share icon"
                     />
@@ -168,7 +168,7 @@ const Card = () => {
             </div>
           </article>
         </div>
-        <div class="col-12 pt-3  ">
+        <div class="col-12 mt-4 border border-1 rounded rounded-2  ">
           <article>
             <div class="card border-0">
               <img
@@ -237,7 +237,7 @@ const Card = () => {
                   <div className="j">
                     <img
                       className="pe-2"
-                      style={{ width: 50, height: 50 }}
+                      style={{ width: 30, height: 30 }}
                       src={eye}
                       alt="eye"
                     />
@@ -245,7 +245,7 @@ const Card = () => {
                   </div>
                   <button className="btn border-0">
                     <img
-                      style={{ width: 30, height: 30 }}
+                      style={{ width: 20, height: 20 }}
                       src={share}
                       alt="share icon"
                     />
@@ -256,7 +256,10 @@ const Card = () => {
           </article>
         </div>
 
-        <div style={{ height: "296px" }} class="col-12 pt-3  ">
+        <div
+          style={{ height: "296px" }}
+          class="col-12 mt-4 border border-1 rounded rounded-2  "
+        >
           <article>
             <div class="card border-0">
               <div class="card-body   bg-white p-4">
@@ -306,7 +309,7 @@ const Card = () => {
                   <div className="j">
                     <img
                       className="pe-2"
-                      style={{ width: 50, height: 50 }}
+                      style={{ width: 30, height: 30 }}
                       src={eye}
                       alt="eye"
                     />
@@ -314,7 +317,7 @@ const Card = () => {
                   </div>
                   <button className="btn border-0">
                     <img
-                      style={{ width: 30, height: 30 }}
+                      style={{ width: 20, height: 20 }}
                       src={share}
                       alt="share icon"
                     />

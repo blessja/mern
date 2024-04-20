@@ -1,7 +1,7 @@
 import React from "react";
 import group from "../../assets/group.png";
 import vector from "../../assets/Vector.png";
-// import "./Nav.css";
+import "./Nav.css";
 
 const Nav = () => {
   return (

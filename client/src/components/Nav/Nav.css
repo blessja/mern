@@ -19,6 +19,10 @@
   position: relative; /* Relative positioning for active line */
 }
 
+.nav-link.active {
+  border: none;
+}
+
 .nav-link.active::after {
   content: "";
   position: absolute;
