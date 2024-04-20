@@ -44,3 +44,6 @@
   background-color: #ccc; /* Color of the horizontal line */
   z-index: 0; /* Ensure it's behind the active line */
 }
+.right-nav-item {
+  float: right;
+}

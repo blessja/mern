@@ -39,7 +39,6 @@ const MainPage = () => {
         <div className="container mt-5">
           <Nav />
         </div>
-        <hr className=" mx-auto " style={{ maxWidth: 1040 }} />
 
         <section
           style={{ maxWidth: 1040 }}

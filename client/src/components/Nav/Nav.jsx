@@ -31,31 +31,35 @@ const Nav = () => {
               Education
             </a>
           </li>
-          <li className="nav-item">
+          <li style={{ paddingRight: 220 }} className="nav-item">
             <a className="nav-link" href="#">
               Job
             </a>
           </li>
+
+          <li className="nav-item right-nav-item">
+            <button
+              style={{ background: "#EDEEF0" }}
+              type="button"
+              className=" btn "
+            >
+              Write a Post
+              <img
+                className=" p-2"
+                style={{ width: "22px", height: "22px" }}
+                src={vector}
+                alt=""
+              />
+            </button>
+          </li>
+
+          <li className="nav-item">
+            <button className="btn btn-primary ms-2 gap-2 d-flex align-items-center">
+              <img src={group} alt="Join group" />
+              Join Group
+            </button>
+          </li>
         </ul>
-      </div>
-      <div className="items2 d-flex gap-2 my-2 align-items-center">
-        <button
-          style={{ background: "#EDEEF0" }}
-          type="button"
-          className=" btn "
-        >
-          Write a Post
-          <img
-            className=" p-2"
-            style={{ width: "22px", height: "22px" }}
-            src={vector}
-            alt=""
-          />
-        </button>
-        <button className="btn btn-primary ms-2 gap-2 d-flex align-items-center">
-          <img src={group} alt="Join group" />
-          Join Group
-        </button>
       </div>
     </div>
   );
