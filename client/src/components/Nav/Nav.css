@@ -1,0 +1,42 @@
+.navbar {
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 10px; /* Adjust spacing between menu items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  position: relative; /* Relative positioning for active line */
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Move up to overlap with the grey line */
+  width: 100%;
+  height: 2px; /* Thickness of the line */
+  background-color: blue; /* Color of the line */
+  z-index: 1; /* Ensure it's above the grey line */
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Thickness of the horizontal line */
+  background-color: #ccc; /* Color of the horizontal line */
+  z-index: 0; /* Ensure it's behind the active line */
+}
