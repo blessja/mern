@@ -42,11 +42,11 @@ const MainPage = () => {
 
         <section
           style={{ maxWidth: 1040 }}
-          class="py-3 py-md-5 py-xl-8 mx-auto"
+          className="py-3 py-md-5 py-xl-8 mx-auto"
         >
           <div
             style={{ width: 1140 }}
-            class="container overflow-hidden gap-5 d-flex flex-row"
+            className="container overflow-hidden gap-5 d-flex flex-row"
           >
             <Card />
 
@@ -152,7 +152,7 @@ const MainPage = () => {
                 </div>
               </div>
               <div className="see_more d-flex align-items-end">
-                <button class="btn text-end mt-5 text-primary text-capitalize">
+                <button className="btn text-end mt-5 text-primary text-capitalize">
                   see more...
                 </button>
               </div>

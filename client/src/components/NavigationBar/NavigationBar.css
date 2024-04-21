@@ -63,3 +63,24 @@
 .nav-button:-webkit-details-marker {
   display: none;
 }
+
+.custom-modal .modal-dialog {
+  max-width: 800px; /* Adjust the width as needed */
+}
+
+.custom-modal .modal-content {
+  height: 600px; /* Adjust the height as needed */
+}
+.custom-modal-header {
+  color: #008a45;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.button-signup-group {
+  border-radius: 2px;
+  border: 0.6px solid #d9d9db;
+  background: #fff;
+}

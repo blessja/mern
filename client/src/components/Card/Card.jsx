@@ -19,29 +19,29 @@ import { Image } from "react-bootstrap";
 const Card = () => {
   return (
     <>
-      <div class="col mx-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
-        <div class="col-12 border border-1 rounded rounded-2 ">
+      <div className="col mx-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
+        <div className="col-12 border border-1 rounded rounded-2 ">
           <article>
-            <div class="card border-0">
+            <div className="card border-0">
               <img
                 style={{ height: "220px" }}
-                class="img-fluid bsb-scale bsb-hover-scale-up"
+                className="img-fluid bsb-scale bsb-hover-scale-up"
                 loading="lazy"
                 src={nature}
                 alt="Nature"
               />
 
-              <div class="card-body   bg-white p-4">
-                <div class="entry-header mb-3">
-                  <ul class="entry-meta list-unstyled d-flex mb-2">
+              <div className="card-body   bg-white p-4">
+                <div className="entry-header mb-3">
+                  <ul className="entry-meta list-unstyled d-flex mb-2">
                     <li>
-                      <a class="link-dark text-decoration-none" href="#!">
+                      <a className="link-dark text-decoration-none" href="#!">
                         ✍️ Article
                       </a>
                     </li>
                   </ul>
-                  <h2 class="card-title entry-title h4 mb-0">
-                    <a class="link-dark text-decoration-none" href="#!">
+                  <h2 className="card-title entry-title h4 mb-0">
+                    <a className="link-dark text-decoration-none" href="#!">
                       What if famous brands had regular fonts? Meet
                       RegulaBrands!
                     </a>
@@ -49,7 +49,7 @@ const Card = () => {
                 </div>
                 <p
                   style={{ maxWidth: 692 }}
-                  class="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
+                  className="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
                 >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Minus eaque reprehenderit quos hic enim, aspernatur
@@ -60,7 +60,7 @@ const Card = () => {
                   cumque?
                 </p>
               </div>
-              <div class="bg-white d-flex justify-content-between align-items-center  p-2">
+              <div className="bg-white d-flex justify-content-between align-items-center  p-2">
                 <div className="profile-info d-flex align-items-center gap-2">
                   <div className="profile">
                     <Image
@@ -94,28 +94,29 @@ const Card = () => {
             </div>
           </article>
         </div>
-        <div class="col-12 mt-4 border border-1 rounded rounded-2">
+
+        <div className="col-12 border border-1 rounded rounded-2 ">
           <article>
-            <div class="card border-0 ">
+            <div className="card border-0">
               <img
                 style={{ height: "220px" }}
-                class="img-fluid bsb-scale bsb-hover-scale-up"
+                className="img-fluid bsb-scale bsb-hover-scale-up"
                 loading="lazy"
                 src={wood}
                 alt="Nature"
               />
 
-              <div class="card-body   bg-white p-4">
-                <div class="entry-header mb-3">
-                  <ul class="entry-meta list-unstyled d-flex mb-2">
+              <div className="card-body   bg-white p-4">
+                <div className="entry-header mb-3">
+                  <ul className="entry-meta list-unstyled d-flex mb-2">
                     <li>
-                      <a class="link-dark text-decoration-none" href="#!">
+                      <a className="link-dark text-decoration-none" href="#!">
                         🔬️ Education
                       </a>
                     </li>
                   </ul>
-                  <h2 class="card-title entry-title h4 mb-0">
-                    <a class="link-dark text-decoration-none" href="#!">
+                  <h2 className="card-title entry-title h4 mb-0">
+                    <a className="link-dark text-decoration-none" href="#!">
                       Tax Benefits for Investment under National Pension Scheme
                       launched by Government
                     </a>
@@ -123,7 +124,7 @@ const Card = () => {
                 </div>
                 <p
                   style={{ maxWidth: 692 }}
-                  class="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
+                  className="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
                 >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Minus eaque reprehenderit quos hic enim, aspernatur
@@ -134,20 +135,20 @@ const Card = () => {
                   cumque?
                 </p>
               </div>
-              <div class="bg-white d-flex justify-content-between align-items-center  p-2">
+              <div className="bg-white d-flex justify-content-between align-items-center  p-2">
                 <div className="profile-info d-flex align-items-center gap-2">
                   <div className="profile">
                     <Image
                       roundedCircle
                       src={sarawest}
                       alt=""
-                      style={{ width: 30, height: 30 }}
+                      style={{ width: 48, height: 48 }}
                     />
                   </div>
                   <p className="myText fs-6 pt-3">Sarah West</p>
                 </div>
                 <div className="views d-flex justify-content-between align-items-center">
-                  <div className="j">
+                  <div className="">
                     <img
                       className="pe-2"
                       style={{ width: 30, height: 30 }}
@@ -168,28 +169,29 @@ const Card = () => {
             </div>
           </article>
         </div>
-        <div class="col-12 mt-4 border border-1 rounded rounded-2  ">
+
+        <div className="col-12 mt-4 border border-1 rounded rounded-2  ">
           <article>
-            <div class="card border-0">
+            <div className="card border-0">
               <img
                 style={{ height: "220px" }}
-                class="img-fluid bsb-scale bsb-hover-scale-up"
+                className="img-fluid bsb-scale bsb-hover-scale-up"
                 loading="lazy"
                 src={car}
                 alt="Nature"
               />
 
-              <div class="card-body   bg-white p-4">
-                <div class="entry-header mb-3">
-                  <ul class="entry-meta list-unstyled d-flex mb-2">
+              <div className="card-body   bg-white p-4">
+                <div className="entry-header mb-3">
+                  <ul className="entry-meta list-unstyled d-flex mb-2">
                     <li>
-                      <a class="link-dark text-decoration-none" href="#!">
+                      <a className="link-dark text-decoration-none" href="#!">
                         🗓️ Meetup
                       </a>
                     </li>
                   </ul>
-                  <h2 class="card-title entry-title h4 mb-0">
-                    <a class="link-dark text-decoration-none" href="#!">
+                  <h2 className="card-title entry-title h4 mb-0">
+                    <a className="link-dark text-decoration-none" href="#!">
                       Finance & Investment Elite Social Mixer @Lujiazui
                     </a>
                   </h2>
@@ -210,7 +212,7 @@ const Card = () => {
                 </div>
                 <p
                   style={{ maxWidth: 692 }}
-                  class="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
+                  className="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
                 >
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Minus eaque reprehenderit quos hic enim, aspernatur
@@ -221,7 +223,7 @@ const Card = () => {
                   cumque?
                 </p>
               </div>
-              <div class="bg-white d-flex justify-content-between align-items-center  p-2">
+              <div className="bg-white d-flex justify-content-between align-items-center  p-2">
                 <div className="profile-info d-flex align-items-center gap-2">
                   <div className="profile">
                     <Image
@@ -258,21 +260,21 @@ const Card = () => {
 
         <div
           style={{ height: "296px" }}
-          class="col-12 mt-4 border border-1 rounded rounded-2  "
+          className="col-12 mt-4 border border-1 rounded rounded-2  "
         >
           <article>
-            <div class="card border-0">
-              <div class="card-body   bg-white p-4">
-                <div class="entry-header mb-3">
-                  <ul class="entry-meta list-unstyled d-flex mb-2">
+            <div className="card border-0">
+              <div className="card-body   bg-white p-4">
+                <div className="entry-header mb-3">
+                  <ul className="entry-meta list-unstyled d-flex mb-2">
                     <li>
-                      <a class="link-dark text-decoration-none" href="#!">
+                      <a className="link-dark text-decoration-none" href="#!">
                         💼️ Job
                       </a>
                     </li>
                   </ul>
-                  <h2 class="card-title entry-title h4 mb-0">
-                    <a class="link-dark text-decoration-none" href="#!">
+                  <h2 className="card-title entry-title h4 mb-0">
+                    <a className="link-dark text-decoration-none" href="#!">
                       Software Developer
                     </a>
                   </h2>
@@ -293,7 +295,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div class="bg-white d-flex justify-content-between align-items-center  p-2">
+              <div className="bg-white d-flex justify-content-between align-items-center  p-2">
                 <div className="profile-info d-flex align-items-center gap-2">
                   <div className="profile">
                     <Image
