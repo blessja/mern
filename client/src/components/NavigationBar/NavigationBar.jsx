@@ -15,6 +15,7 @@ import myImage from "../../assets/whole.png";
 import atg from "../../assets/atg_illustration.png";
 import visibility from "../../assets/visibility.png";
 import google from "../../assets/search.png";
+import search_bar from "../../assets/search_bar.png";
 import facebook from "../../assets/f_logo.png";
 import { AuthState } from "../../context/AuthProvider";
 import ProfileModal from "../ProfileModal/ProfileModal";
@@ -46,14 +47,21 @@ const NavigationBar = () => {
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Form className="d-flex">
-            <Form.Control
+          <form className="d-flex" style={{ width: 360, borderRadius: 21 }}>
+            <button className="search" type="submit">
+              <img
+                alt="Search"
+                src={search_bar}
+                style={{ width: 22, height: 22 }}
+              />
+            </button>
+            <input
+              className="form-control custom-input-search"
               type="search"
-              placeholder="Search"
-              className="me-2"
+              placeholder="Search for your favorite groups in ATG"
               aria-label="Search"
             />
-          </Form>
+          </form>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
             {auth ? (
@@ -79,20 +87,15 @@ const NavigationBar = () => {
               </DropdownButton>
             ) : (
               <Nav.Item>
-                <span>
-                  Create account.
-                  <a href="http://localhost:3000/register" className="ms-2">
-                    It's free
-                  </a>
-                  <button
-                    type="button"
-                    className="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Launch demo modal
-                  </button>
-                </span>
+                <button
+                  type="button"
+                  className="btn p-0 m-0 custom-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Create account.{" "}
+                  <span className="ms-2 text-primary fw-bold">It's free</span>
+                </button>
               </Nav.Item>
             )}
           </Navbar.Collapse>
