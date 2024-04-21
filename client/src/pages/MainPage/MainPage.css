@@ -19,6 +19,15 @@
   border: none;
 }
 
+.group {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  border: 0.8px solid #ffff;
+  font-size: 12px;
+}
+
 .text-recommended {
   color: #000;
   font-size: 14px;
@@ -31,4 +40,10 @@
 
 .following {
   background: #edeef0;
+}
+
+@media screen and (min-width: 992px) {
+  .background_c {
+    justify-content: end;
+  }
 }

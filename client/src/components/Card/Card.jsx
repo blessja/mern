@@ -19,10 +19,10 @@ import { Image } from "react-bootstrap";
 const Card = () => {
   return (
     <>
-      <div className="col mx-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
-        <div className="col-12 border border-1 rounded rounded-2 ">
+      <div className="col mx-lg-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
+        <div className=" flex-column d-flex border border-1 rounded rounded-2 ">
           <article>
-            <div className="card border-0">
+            <div className="card border-0 d-flex flex-column">
               <img
                 style={{ height: "220px" }}
                 className="img-fluid bsb-scale bsb-hover-scale-up"

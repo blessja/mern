@@ -4,6 +4,7 @@ import leisure from "../../assets/leisure.png";
 import activism from "../../assets/activism.png";
 import mba from "../../assets/mba.png";
 import philosophy from "../../assets/philosophy.png";
+import arrowback from "../../assets/back.png";
 import Nav from "../../components/Nav/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -23,16 +24,24 @@ const MainPage = () => {
         className="main-content"
       >
         <div style={{ width: "100%" }} className=" container-fluid p-0 ">
-          <div style={{ height: "440px" }} className="hero bg-overlay ">
-            <div
-              style={{ position: "absolute", top: 358, left: 500 }}
-              className=""
-            >
-              {" "}
-              <h2 className=" text-white">Computer Engineering</h2>
-              <p className=" text-white">
-                142,765 Computer Engineers follow this
-              </p>
+          <div
+            style={{ height: "440px" }}
+            className="hero bg-overlay container-fluid d-flex flex-row align-items-center align-content-center"
+          >
+            <div className=" container d-flex flex-column">
+              <div class="d-flex d-lg-none justify-content-between mt-3">
+                <button class="btn">
+                  <img src={arrowback.png} alt="back" />
+                </button>
+                <button class="btn group">Leave Group</button>
+              </div>
+              <div>
+                {" "}
+                <h1 className=" text-white">Computer Engineering</h1>
+                <p className=" text-white mb-5">
+                  142,765 Computer Engineers follow this
+                </p>
+              </div>
             </div>
           </div>
         </div>

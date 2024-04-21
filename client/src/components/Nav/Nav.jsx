@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div
       style={{ width: "1040px", height: "68px" }}
-      className=" d-flex justify-content-between mx-auto"
+      className=" d-none d-lg-flex d-flex justify-content-between mx-lg-auto"
     >
       <div className="items1 ">
         <ul className=" nav nav-tabs ">
