@@ -23,9 +23,9 @@ const App = () => {
       <NavigationBar />
       <Routes>
         {/* Private routes (Requires authentication token) */}
-        {/* <Route element={<PrivateRoutes />}>
+        <Route element={<PrivateRoutes />}>
           <Route path="/" element={<HomePage />} />
-        </Route> */}
+        </Route>
         <Route path="/" element={<MainPage />} />
 
         {/* Public routes */}

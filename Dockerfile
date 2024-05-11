@@ -1,5 +1,8 @@
-# Use an official Node runtime as a parent image
-FROM node:14
+# Specify the desired architecture
+ARG ARCH="amd64"
+
+# Use a base image compatible with the desired architecture
+FROM ${ARCH}/node:14
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
