@@ -1,0 +1,27 @@
+app: my-mern-app
+
+services:
+  - name: backend
+    docker:
+      image: blessjackas/my-mern-backend:latest
+    ports:
+      - port: 5000
+        protocol: HTTP
+    routes:
+      - path: /api
+        port: 5000
+    env:
+      - key: MONGO_URI
+        value: "mongodb+srv://admin-Jackson:jaydenjackson1@cluster0.bnu3c.mongodb.net/mern?retryWrites=true&w=majority"
+      - key: JWT_SECRET
+        value: "mypassword"
+
+  - name: frontend
+    docker:
+      image: blessjackas/my-mern-frontend:latest
+    ports:
+      - port: 80
+        protocol: HTTP
+    routes:
+      - path: /
+        port: 80
