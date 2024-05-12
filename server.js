@@ -15,6 +15,7 @@ const corsOptions = {
   origin: [
     "https://yappy-astrid-joeden-d74155b8.koyeb.app/api",
     "http://localhost:3000",
+    "https://mern-front-seven.vercel.app",
   ],
 };
 
