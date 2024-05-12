@@ -12,13 +12,16 @@ const HomePage = () => {
 
   const fetchPrivateDate = async () => {
     try {
-      const response = await fetch("/api/private", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${auth.token}`,
-        },
-      });
+      const response = await fetch(
+        "https://yappy-astrid-joeden-d74155b8.koyeb.app/api/private",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${auth.token}`,
+          },
+        }
+      );
       const data = await response.json();
 
       if (data.success) {

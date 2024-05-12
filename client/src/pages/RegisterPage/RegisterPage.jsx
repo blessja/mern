@@ -121,18 +121,21 @@ const RegisterPage = () => {
 
     try {
       // Register user
-      const response = await fetch("/api/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: credentials.name,
-          email: credentials.email,
-          password: credentials.password,
-          profilePic: credentials.profilePic,
-        }),
-      });
+      const response = await fetch(
+        "https://yappy-astrid-joeden-d74155b8.koyeb.app/api/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: credentials.name,
+            email: credentials.email,
+            password: credentials.password,
+            profilePic: credentials.profilePic,
+          }),
+        }
+      );
       const data = await response.json();
 
       if (data.success) {
