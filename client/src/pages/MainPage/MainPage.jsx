@@ -105,7 +105,7 @@ const MainPage = () => {
                     <a
                       style={{ height: 24 }}
                       className="btn rounded-5  following d-flex align-items-center"
-                      href="#"
+                      href="/follow"
                     >
                       Follow
                     </a>
@@ -121,7 +121,7 @@ const MainPage = () => {
                     <a
                       style={{ height: 24 }}
                       className="btn rounded-5  following d-flex align-items-center"
-                      href="#"
+                      href="/follow"
                     >
                       Follow
                     </a>
@@ -137,7 +137,7 @@ const MainPage = () => {
                     <a
                       style={{ height: 24 }}
                       className="btn rounded-5  following d-flex align-items-center"
-                      href="#"
+                      href="/follow"
                     >
                       Follow
                     </a>
@@ -153,7 +153,7 @@ const MainPage = () => {
                     <a
                       style={{ height: 24 }}
                       className="btn rounded-5  following d-flex align-items-center"
-                      href="#"
+                      href="follow"
                     >
                       Follow
                     </a>
