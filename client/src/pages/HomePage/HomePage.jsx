@@ -13,7 +13,7 @@ const HomePage = () => {
   const fetchPrivateDate = async () => {
     try {
       const response = await fetch(
-        "https://yappy-astrid-joeden-d74155b8.koyeb.app/api/private",
+        "https://mern-1-s1dp.onrender.com/api/private",
         {
           method: "GET",
           headers: {

@@ -122,7 +122,7 @@ const RegisterPage = () => {
     try {
       // Register user
       const response = await fetch(
-        "https://yappy-astrid-joeden-d74155b8.koyeb.app/api/auth/register",
+        "https://mern-1-s1dp.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {

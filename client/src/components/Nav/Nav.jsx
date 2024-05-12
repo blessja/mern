@@ -12,27 +12,27 @@ const Nav = () => {
       <div className="items1 ">
         <ul className=" nav nav-tabs ">
           <li className="nav-item">
-            <a className="nav-link active" href="#">
+            <a className="nav-link active" href="/allpost">
               All Posts(32)
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/article">
               Article
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/event">
               Evernt
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/education">
               Education
             </a>
           </li>
           <li style={{ paddingRight: 220 }} className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/job">
               Job
             </a>
           </li>
