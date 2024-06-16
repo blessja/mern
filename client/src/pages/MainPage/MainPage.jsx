@@ -23,15 +23,18 @@ const MainPage = () => {
         <div className="container-fluid p-0">
           <div
             className="hero bg-overlay container-fluid d-flex flex-column align-items-center justify-content-center"
-            style={{ height: "440px" }}
+            style={{ height: "440px", position: "relative" }}
           >
             <div className="container d-flex flex-column">
-              <div className="d-flex d-lg-none justify-content-between mt-3">
+              <div className="d-flex d-lg-none justify-content-between top-buttons">
                 <button className="btn">
                   <img src={arrowback} alt="back" />
                 </button>
                 <button className="btn group">Leave Group</button>
               </div>
+            </div>
+
+            <div className="container d-flex flex-column  content">
               <div>
                 <h1 className="text-white">Computer Engineering</h1>
                 <p className="text-white mb-5">
@@ -41,7 +44,8 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-        <div className="container mt-5">
+
+        <div className="container mt-5 sticky-lg-top bg-white">
           <Nav />
         </div>
 
@@ -55,7 +59,7 @@ const MainPage = () => {
             </div>
 
             <div
-              className="d-flex flex-column align-items-center gy-4 gy-lg-0"
+              className="d-flex flex-column align-items-center gy-4 gy-lg-0 d-none d-md-flex"
               style={{ width: 300 }}
             >
               <div className="d-flex flex-row" style={{ width: 234 }}>
@@ -72,7 +76,7 @@ const MainPage = () => {
                 </button>
               </div>
               <div className="border-top my-3" style={{ width: 243 }}></div>
-              <div className=" mt-4 d-flex gap-2" style={{ width: 243 }}>
+              <div className="mt-4 d-flex gap-2" style={{ width: 243 }}>
                 <FontAwesomeIcon icon={faExclamationCircle} />
                 <p className="small">
                   Your location will help us serve better and extend a

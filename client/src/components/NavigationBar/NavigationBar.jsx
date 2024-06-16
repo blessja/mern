@@ -33,7 +33,7 @@ const NavigationBar = () => {
 
   const [isSignIn, setIsSignIn] = useState(true); // State to toggle between Sign In and Sign Up
   return (
-    <>
+    <div className=" d-none d-md-block">
       <Navbar collapseOnSelect expand="md" variant="dark" id="nav">
         <Container className=" d-none d-lg-flex align-items-center justify-content-between p-3">
           <div></div>
@@ -219,7 +219,7 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

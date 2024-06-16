@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import nature from "../../assets/nature.jpg";
 import wood from "../../assets/wood.jpg";
 import car from "../../assets/car.jpg";
@@ -8,6 +8,7 @@ import share from "../../assets/share-icon.png";
 import sarawest from "../../assets/Sarah_West.png";
 import ronal from "../../assets/Ronal.png";
 import joseph from "../../assets/Joseph.png";
+import more from "../../assets/baseline_more.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
@@ -17,12 +18,37 @@ import {
 import { Image } from "react-bootstrap";
 
 const Card = () => {
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const handleClick = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+
+  const handleClickOutside = (event) => {
+    const dropdown = document.getElementById("dropdown-menu");
+    const clickableElement = document.getElementById("clickable-element");
+    if (
+      dropdown &&
+      !dropdown.contains(event.target) &&
+      !clickableElement.contains(event.target)
+    ) {
+      setIsDropdownVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <div className="col mx-lg-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
-        <div className=" flex-column d-flex border border-1 rounded rounded-2 ">
+        <div className="col-12 border border-1 rounded rounded-2 mb-4 ">
           <article>
-            <div className="card border-0 d-flex flex-column">
+            <div className="card border-0">
               <img
                 style={{ height: "220px" }}
                 className="img-fluid bsb-scale bsb-hover-scale-up"
@@ -40,24 +66,24 @@ const Card = () => {
                       </a>
                     </li>
                   </ul>
-                  <h2 className="card-title entry-title h4 mb-0">
-                    <a className="link-dark text-decoration-none" href="#!">
-                      What if famous brands had regular fonts? Meet
-                      RegulaBrands!
-                    </a>
-                  </h2>
+                  <div className=" d-flex">
+                    <h2 className="card-title entry-title h4 mb-0">
+                      <a className="link-dark text-decoration-none" href="#!">
+                        What if famous brands had regular fonts? Meet
+                        RegulaBrands!
+                      </a>
+                    </h2>
+                    <div>
+                      <img src={more} />
+                    </div>
+                  </div>
                 </div>
                 <p
                   style={{ maxWidth: 692 }}
                   className="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
                 >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Minus eaque reprehenderit quos hic enim, aspernatur
-                  praesentium quod ullam sit ipsa libero eos officia. Provident
-                  eaque magnam officiis quis modi, ipsum aspernatur odio cum
-                  facere ducimus temporibus iste. Illum modi cupiditate nulla
-                  obcaecati, unde totam placeat doloribus. Saepe facere sequi
-                  cumque?
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
                 </p>
               </div>
               <div className="bg-white d-flex justify-content-between align-items-center  p-2">
@@ -94,7 +120,6 @@ const Card = () => {
             </div>
           </article>
         </div>
-
         <div className="col-12 border border-1 rounded rounded-2 ">
           <article>
             <div className="card border-0">
@@ -115,24 +140,24 @@ const Card = () => {
                       </a>
                     </li>
                   </ul>
-                  <h2 className="card-title entry-title h4 mb-0">
-                    <a className="link-dark text-decoration-none" href="#!">
-                      Tax Benefits for Investment under National Pension Scheme
-                      launched by Government
-                    </a>
-                  </h2>
+                  <div className=" d-flex">
+                    <h2 className="card-title entry-title h4 mb-0">
+                      <a className="link-dark text-decoration-none  " href="#!">
+                        Tax Benefits for Investment under National Pension
+                        Scheme launched by Government
+                      </a>
+                    </h2>
+                    <div>
+                      <img src={more} />
+                    </div>
+                  </div>
                 </div>
                 <p
                   style={{ maxWidth: 692 }}
                   className="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
                 >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Minus eaque reprehenderit quos hic enim, aspernatur
-                  praesentium quod ullam sit ipsa libero eos officia. Provident
-                  eaque magnam officiis quis modi, ipsum aspernatur odio cum
-                  facere ducimus temporibus iste. Illum modi cupiditate nulla
-                  obcaecati, unde totam placeat doloribus. Saepe facere sequi
-                  cumque?
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
                 </p>
               </div>
               <div className="bg-white d-flex justify-content-between align-items-center  p-2">
@@ -190,11 +215,28 @@ const Card = () => {
                       </a>
                     </li>
                   </ul>
-                  <h2 className="card-title entry-title h4 mb-0">
-                    <a className="link-dark text-decoration-none" href="#!">
-                      Finance & Investment Elite Social Mixer @Lujiazui
-                    </a>
-                  </h2>
+                  <div className="d-flex justify-content-between">
+                    <h2 className="card-title entry-title h4 mb-0">
+                      <a className="link-dark text-decoration-none" href="#!">
+                        Finance & Investment Elite Social Mixer @Lujiazui
+                      </a>
+                    </h2>
+                    <div>
+                      <img
+                        src={more}
+                        id="clickable-element"
+                        onClick={handleClick}
+                      />
+                      {isDropdownVisible && (
+                        <div id="dropdown-menu">
+                          <div className="dropdown-item">Edit</div>
+                          <div className="dropdown-item">Repot</div>
+                          <div className="dropdown-item">Option 3</div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
                   <ul className=" d-flex list-unstyled align-items-center gap-5 pt-2">
                     <li className=" gap-1 align-items-center d-flex">
                       <FontAwesomeIcon icon={faCalendarDay} /> Fri, 12 Oct, 2018
@@ -210,18 +252,6 @@ const Card = () => {
                     Visit Website
                   </button>
                 </div>
-                <p
-                  style={{ maxWidth: 692 }}
-                  className="card-text entry-summary text-secondary mb-3 text-truncate overflow-hidden "
-                >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Minus eaque reprehenderit quos hic enim, aspernatur
-                  praesentium quod ullam sit ipsa libero eos officia. Provident
-                  eaque magnam officiis quis modi, ipsum aspernatur odio cum
-                  facere ducimus temporibus iste. Illum modi cupiditate nulla
-                  obcaecati, unde totam placeat doloribus. Saepe facere sequi
-                  cumque?
-                </p>
               </div>
               <div className="bg-white d-flex justify-content-between align-items-center  p-2">
                 <div className="profile-info d-flex align-items-center gap-2">
@@ -273,11 +303,17 @@ const Card = () => {
                       </a>
                     </li>
                   </ul>
-                  <h2 className="card-title entry-title h4 mb-0">
-                    <a className="link-dark text-decoration-none" href="#!">
-                      Software Developer
-                    </a>
-                  </h2>
+                  <div className="d-flex justify-content-between">
+                    <h2 className="card-title entry-title h4 mb-0">
+                      <a className="link-dark text-decoration-none" href="#!">
+                        Software Developer
+                      </a>
+                    </h2>
+                    <div className=" d-flex">
+                      <img src={more} />
+                    </div>
+                  </div>
+
                   <ul className=" d-flex list-unstyled align-items-center gap-5 pt-2">
                     <li className=" gap-1 align-items-center d-flex">
                       <FontAwesomeIcon icon={faCalendarDay} /> Innovaccer
