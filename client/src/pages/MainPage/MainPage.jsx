@@ -4,6 +4,7 @@ import leisure from "../../assets/leisure.png";
 import activism from "../../assets/activism.png";
 import mba from "../../assets/mba.png";
 import philosophy from "../../assets/philosophy.png";
+import pencil from "../../assets/pencil.png";
 import arrowback from "../../assets/back.png";
 import Nav from "../../components/Nav/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +14,6 @@ import {
   faExclamationCircle,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-
 import Card from "../../components/Card/Card";
 
 const MainPage = () => {
@@ -122,6 +122,12 @@ const MainPage = () => {
           </div>
         </section>
       </section>
+
+      <div>
+        <button className="circle-write-post position-fixed d-flex justify-content-center align-items-center btn d-md-none d-block">
+          <img src={pencil} />
+        </button>
+      </div>
     </>
   );
 };

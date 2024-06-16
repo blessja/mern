@@ -136,51 +136,83 @@ const NavigationBar = () => {
               <div className="container text-center">
                 <div className="row">
                   <div className="col">
-                    <div className="d-flex flex-column gap-2">
-                      <input
-                        type="email"
-                        className="form-control custom-input"
-                        placeholder="Email"
-                      />
-                      <div className="d-flex align-items-center justify-content-between position-relative">
-                        <input
-                          type="password"
-                          className="form-control custom-input"
-                          placeholder="Password"
-                        />
-                        <button
-                          className="btn position-absolute"
-                          style={{ right: 10 }}
-                        >
-                          <img
-                            src={visibility}
-                            alt="eye"
-                            width="18px"
-                            height="18px"
-                          />
-                        </button>
-                      </div>
-                      {isSignIn && (
-                        <input
-                          type="password"
-                          className="form-control mb-4 custom-input"
-                          placeholder="Confirm password"
-                        />
-                      )}
+                    <div className="d-flex flex-column ">
                       {!isSignIn && (
-                        <>
+                        <div className="">
+                          <div className="d-flex">
+                            <input
+                              type="text"
+                              className="form-control rounded-0 custom-input"
+                              placeholder="First Name"
+                            />
+                            <input
+                              type="text"
+                              className="form-control rounded-0 custom-input"
+                              placeholder="Last Name"
+                            />
+                          </div>
                           <input
-                            type="text"
-                            className="form-control custom-input"
-                            placeholder="First Name"
+                            type="email"
+                            className="form-control rounded-0 custom-input"
+                            placeholder="Email"
                           />
+                          <div className="d-flex align-items-center justify-content-between position-relative">
+                            <input
+                              type="password"
+                              className="form-control rounded-0 custom-input"
+                              placeholder="Password"
+                            />
+
+                            <button
+                              className="btn position-absolute"
+                              style={{ right: 10 }}
+                            >
+                              <img
+                                src={visibility}
+                                alt="eye"
+                                width="18px"
+                                height="18px"
+                              />
+                            </button>
+                          </div>
                           <input
-                            type="text"
-                            className="form-control custom-input"
-                            placeholder="Last Name"
+                            type="password"
+                            className="form-control rounded-0 mb-4 custom-input"
+                            placeholder="Confirm password"
                           />
-                        </>
+                        </div>
                       )}
+
+                      {isSignIn && (
+                        <div>
+                          <input
+                            type="email"
+                            className="form-control rounded-0 custom-input"
+                            placeholder="Email"
+                          />
+
+                          <div className="d-flex align-items-center justify-content-between position-relative mb-4">
+                            <input
+                              type="password"
+                              className="form-control rounded-0 custom-input"
+                              placeholder="Password"
+                            />
+
+                            <button
+                              className="btn position-absolute"
+                              style={{ right: 10 }}
+                            >
+                              <img
+                                src={visibility}
+                                alt="eye"
+                                width="18px"
+                                height="18px"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      )}
+
                       <button
                         className="btn btn-primary rounded-5 d-flex justify-content-center align-items-center mb-4"
                         data-bs-dismiss="modal"
