@@ -24,7 +24,7 @@ const App = () => {
       <Routes>
         {/* Private routes (Requires authentication token) */}
         <Route element={<PrivateRoutes />}>
-          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/" element={<HomePage />} /> */}
         </Route>
         <Route path="/" element={<MainPage />} />
 
