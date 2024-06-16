@@ -96,7 +96,7 @@ body {
 .content {
   margin-top: 220px;
 }
-.circle-write-post {
+.circle {
   height: 54px;
   width: 54px;
   background: linear-gradient(180deg, #ff5c5c, #f0568a);
@@ -106,42 +106,19 @@ body {
   z-index: 1000;
 }
 
-.mobile-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1050;
-}
-
-.mobile-modal-overlay .d-flex {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 500px;
-  width: 90%;
-}
-
-.modal-bottom .modal-dialog {
+.modal.bottom .modal-dialog {
   position: fixed;
   bottom: 0;
   margin: 0;
   width: 100%;
-  height: auto;
   transition: transform 0.3s ease-out;
 }
-
-.modal-bottom .modal-content {
-  border-radius: 10px 10px 0 0;
+.modal.bottom .modal-dialog .modal-content {
+  border-radius: 0;
 }
-
-@media (min-width: 992px) {
-  .modal-bottom .modal-dialog {
-    display: none;
-  }
+.modal.bottom.fade .modal-dialog {
+  transform: translateY(100%);
+}
+.modal.bottom.fade.show .modal-dialog {
+  transform: translateY(0);
 }

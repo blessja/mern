@@ -46,7 +46,7 @@ const Card = () => {
   return (
     <>
       <div className="col mx-lg-auto d-flex flex-column align-items-center gy-4 gy-lg-0">
-        <div className="col-12 border border-1 rounded rounded-2 mb-4 ">
+        <div className="col-12 border border-1 rounded rounded-2 mb-4 px-0 ">
           <article>
             <div className="card border-0">
               <img
@@ -120,7 +120,7 @@ const Card = () => {
             </div>
           </article>
         </div>
-        <div className="col-12 border border-1 rounded rounded-2 ">
+        <div className="col-12 border border-1 rounded rounded-2 px-0">
           <article>
             <div className="card border-0">
               <img
@@ -195,7 +195,7 @@ const Card = () => {
           </article>
         </div>
 
-        <div className="col-12 mt-4 border border-1 rounded rounded-2  ">
+        <div className="col-12 mt-4 border border-1 rounded rounded-2 px-0  ">
           <article>
             <div className="card border-0">
               <img
@@ -290,7 +290,7 @@ const Card = () => {
 
         <div
           style={{ height: "296px" }}
-          className="col-12 mt-4 border border-1 rounded rounded-2  "
+          className="col-12 mt-4 border border-1 rounded rounded-2 px-0  "
         >
           <article>
             <div className="card border-0">
