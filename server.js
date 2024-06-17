@@ -16,7 +16,7 @@ const corsOptions = {
     "https://yappy-astrid-joeden-d74155b8.koyeb.app/api",
     "http://localhost:3000",
     "https://mern-front-seven.vercel.app",
-    "https://mern-1-s1dp.onrender.com/api",
+    "https://mern-2-lu3d.onrender.com",
   ],
 };
 

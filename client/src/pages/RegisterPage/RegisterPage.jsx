@@ -122,7 +122,7 @@ const RegisterPage = () => {
     try {
       // Register user
       const response = await fetch(
-        "https://mern-1-s1dp.onrender.com/api/auth/register",
+        "https://mern-2-lu3d.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {
