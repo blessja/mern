@@ -122,3 +122,7 @@ body {
 .modal.bottom.fade.show .modal-dialog {
   transform: translateY(0);
 }
+
+.custom-grey-bg {
+  background-color: #f7f8fa;
+}

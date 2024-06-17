@@ -8,6 +8,7 @@ import pencil from "../../assets/pencil.png";
 import arrowback from "../../assets/back.png";
 import Nav from "../../components/Nav/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import {
   faLocationDot,
   faPen,
@@ -15,8 +16,15 @@ import {
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "../../components/Card/Card";
+import atg from "../../assets/atg_illustration.png";
+import visibility from "../../assets/visibility.png";
+import google from "../../assets/search.png";
+import search_bar from "../../assets/search_bar.png";
+import facebook from "../../assets/f_logo.png";
 
 const MainPage = () => {
+  const [isSignIn, setIsSignIn] = useState(true); // State to toggle between Sign In and Sign Up
+
   return (
     <>
       <section className="main-content w-100" style={{ height: 2477 }}>
@@ -145,7 +153,7 @@ const MainPage = () => {
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLongTitle">
-                  Modal title
+                  {isSignIn ? "Welcome back!" : "Create Account"}
                 </h5>
                 <button
                   type="button"
@@ -156,18 +164,127 @@ const MainPage = () => {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div className="modal-body">...</div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Save changes
-                </button>
+              <div className="modal-body">
+                <div className="row">
+                  <div className="">
+                    <div className="d-flex flex-column ">
+                      {!isSignIn && (
+                        <div className="">
+                          <div className="d-flex">
+                            <input
+                              type="text"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
+                              placeholder="First Name"
+                            />
+                            <input
+                              type="text"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
+                              placeholder="Last Name"
+                            />
+                          </div>
+                          <input
+                            type="email"
+                            className="form-control rounded-0 custom-input custom-grey-bg"
+                            placeholder="Email"
+                          />
+                          <div className="d-flex align-items-center justify-content-between position-relative">
+                            <input
+                              type="password"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
+                              placeholder="Password"
+                            />
+
+                            <button
+                              className="btn position-absolute"
+                              style={{ right: 10 }}
+                            >
+                              <img
+                                src={visibility}
+                                alt="eye"
+                                width="18px"
+                                height="18px"
+                              />
+                            </button>
+                          </div>
+                          <input
+                            type="password"
+                            className="form-control rounded-0 mb-4 custom-input custom-grey-bg"
+                            placeholder="Confirm password"
+                          />
+                        </div>
+                      )}
+
+                      {isSignIn && (
+                        <div>
+                          <input
+                            type="email"
+                            className="form-control rounded-0 custom-input custom-grey-bg"
+                            placeholder="Email"
+                          />
+
+                          <div className="d-flex align-items-center justify-content-between position-relative mb-4">
+                            <input
+                              type="password"
+                              className="form-control rounded-0 custom-inpu custom-grey-bg"
+                              placeholder="Password"
+                            />
+
+                            <button
+                              className="btn position-absolute"
+                              style={{ right: 10 }}
+                            >
+                              <img
+                                src={visibility}
+                                alt="eye"
+                                width="18px"
+                                height="18px"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className=" d-flex justify-content-between align-items-center">
+                        <button
+                          className="btn btn-primary w-50 rounded-5 d-flex justify-content-center align-items-center mb-4"
+                          data-bs-dismiss="modal"
+                        >
+                          {isSignIn ? "Sign In" : "Create Account"}
+                        </button>
+                        <p
+                          className="btn text-decoration-underline "
+                          onClick={() => setIsSignIn(!isSignIn)}
+                        >
+                          {isSignIn ? "or, Create Account" : "or, Sign In"}
+                        </p>
+                      </div>
+                      <div className="d-flex flex-column gap-2">
+                        <button className="btn d-flex align-items-center justify-content-center gap-2 button-signup-group">
+                          <img src={facebook} alt="facebook" />
+                          Sign In with Facebook
+                        </button>
+                        <button className="btn d-flex align-items-center gap-2 button-signup-group justify-content-center">
+                          <img src={google} alt="google" />
+                          Sign In with Google
+                        </button>
+                      </div>
+                      {isSignIn && (
+                        <button className="btn   text-center forgot mt-4">
+                          Forgot Password?
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className=" p-3">
+                    {!isSignIn && (
+                      <p className=" text-center">
+                        By signing up, you agree to our Terms &amp; conditions,
+                        Privacy policy
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

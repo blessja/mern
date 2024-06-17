@@ -127,11 +127,21 @@ const NavigationBar = () => {
                 <h4 className="d-flex fw-bold">
                   {isSignIn ? "Sign In" : "Create Account"}
                 </h4>
-                <button className="btn" onClick={() => setIsSignIn(!isSignIn)}>
+                <p className="btn" onClick={() => setIsSignIn(!isSignIn)}>
                   {isSignIn
                     ? "Don't have an account? Create Account"
-                    : "Already have an account? Sign In"}
-                </button>
+                    : "Already have an account? "}
+                  {!isSignIn && (
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "blue",
+                      }}
+                    >
+                      Sign In
+                    </span>
+                  )}
+                </p>
               </div>
               <div className="container text-center">
                 <div className="row">
@@ -142,24 +152,24 @@ const NavigationBar = () => {
                           <div className="d-flex">
                             <input
                               type="text"
-                              className="form-control rounded-0 custom-input"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
                               placeholder="First Name"
                             />
                             <input
                               type="text"
-                              className="form-control rounded-0 custom-input"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
                               placeholder="Last Name"
                             />
                           </div>
                           <input
                             type="email"
-                            className="form-control rounded-0 custom-input"
+                            className="form-control rounded-0 custom-input custom-grey-bg"
                             placeholder="Email"
                           />
                           <div className="d-flex align-items-center justify-content-between position-relative">
                             <input
                               type="password"
-                              className="form-control rounded-0 custom-input"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
                               placeholder="Password"
                             />
 
@@ -177,7 +187,7 @@ const NavigationBar = () => {
                           </div>
                           <input
                             type="password"
-                            className="form-control rounded-0 mb-4 custom-input"
+                            className="form-control rounded-0 mb-4 custom-input custom-grey-bg"
                             placeholder="Confirm password"
                           />
                         </div>
@@ -187,14 +197,14 @@ const NavigationBar = () => {
                         <div>
                           <input
                             type="email"
-                            className="form-control rounded-0 custom-input"
+                            className="form-control rounded-0 custom-input custom-grey-bg"
                             placeholder="Email"
                           />
 
                           <div className="d-flex align-items-center justify-content-between position-relative mb-4">
                             <input
                               type="password"
-                              className="form-control rounded-0 custom-input"
+                              className="form-control rounded-0 custom-input custom-grey-bg"
                               placeholder="Password"
                             />
 
@@ -217,7 +227,7 @@ const NavigationBar = () => {
                         className="btn btn-primary rounded-5 d-flex justify-content-center align-items-center mb-4"
                         data-bs-dismiss="modal"
                       >
-                        {isSignIn ? "Sign In" : "Sign Up"}
+                        {isSignIn ? "Sign In" : "Create Account"}
                       </button>
                       <div className="d-flex flex-column gap-2">
                         <button className="btn d-flex align-items-center justify-content-center gap-2 button-signup-group">
@@ -230,7 +240,7 @@ const NavigationBar = () => {
                         </button>
                       </div>
                       {isSignIn && (
-                        <button className="btn d-none d-lg-block text-center forgot">
+                        <button className="btn d-none d-lg-block text-center forgot mt-4">
                           Forgot Password?
                         </button>
                       )}
@@ -239,10 +249,12 @@ const NavigationBar = () => {
                   <div className="col">
                     <div className="d-flex flex-column">
                       <img src={atg} alt="atg-illustration" />
-                      <p className="info-signup">
-                        By signing up, you agree to our Terms &amp; conditions,
-                        Privacy policy
-                      </p>
+                      {!isSignIn && (
+                        <p className="info-signup">
+                          By signing up, you agree to our Terms &amp;
+                          conditions, Privacy policy
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
