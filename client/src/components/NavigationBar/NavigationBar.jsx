@@ -23,7 +23,7 @@ const NavigationBar = () => {
   const logoutHandler = () => {
     localStorage.removeItem("auth");
     setAuth(null);
-    return navigate("/login");
+    return navigate("/");
   };
 
   return (

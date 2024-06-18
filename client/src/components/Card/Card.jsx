@@ -74,7 +74,7 @@ const Card = () => {
                       </a>
                     </h2>
                     <div>
-                      <img src={more} />
+                      <img src={more} alt="more" />
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const Card = () => {
                   <p className="myText fs-6 pt-3">Sarthak Kamra</p>
                 </div>
                 <div className="views d-flex justify-content-between align-items-center">
-                  <div className="">
+                  <div className=" d-flex align-items-center">
                     <img
                       className="pe-2"
                       style={{ width: 30, height: 30 }}
@@ -148,7 +148,7 @@ const Card = () => {
                       </a>
                     </h2>
                     <div>
-                      <img src={more} />
+                      <img src={more} alt="more" />
                     </div>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ const Card = () => {
                   <p className="myText fs-6 pt-3">Sarah West</p>
                 </div>
                 <div className="views d-flex justify-content-between align-items-center">
-                  <div className="">
+                  <div className=" d-flex align-items-center">
                     <img
                       className="pe-2"
                       style={{ width: 30, height: 30 }}
@@ -224,6 +224,7 @@ const Card = () => {
                     <div>
                       <img
                         src={more}
+                        alt="more"
                         id="clickable-element"
                         onClick={handleClick}
                       />
@@ -266,7 +267,7 @@ const Card = () => {
                   <p className="myText fs-6 pt-3">Ronal Jones</p>
                 </div>
                 <div className="views d-flex justify-content-between align-items-center">
-                  <div className="j">
+                  <div className=" d-flex align-items-center">
                     <img
                       className="pe-2"
                       style={{ width: 30, height: 30 }}
@@ -310,17 +311,17 @@ const Card = () => {
                       </a>
                     </h2>
                     <div className=" d-flex">
-                      <img src={more} />
+                      <img src={more} alt="more" />
                     </div>
                   </div>
 
                   <ul className=" d-flex list-unstyled align-items-center gap-5 pt-2">
-                    <li className=" gap-1 align-items-center d-flex">
+                    <li className=" gap-1 align-items-center d-flex text-truncate">
                       <FontAwesomeIcon icon={faCalendarDay} /> Innovaccer
                       Analytics Private Ltd.
                     </li>
                     <li className=" gap-1 align-items-center d-flex">
-                      <FontAwesomeIcon icon={faLocationDot} /> Ahmedabad, India
+                      <FontAwesomeIcon icon={faLocationDot} /> Noida, India
                     </li>
                   </ul>
                   <button
@@ -344,7 +345,7 @@ const Card = () => {
                   <p className="myText fs-6">Joseph Gray</p>
                 </div>
                 <div className="views d-flex justify-content-between align-items-center">
-                  <div className="j">
+                  <div className=" d-flex align-items-center">
                     <img
                       className="pe-2"
                       style={{ width: 30, height: 30 }}

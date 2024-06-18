@@ -16,10 +16,8 @@ import {
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "../../components/Card/Card";
-import atg from "../../assets/atg_illustration.png";
 import visibility from "../../assets/visibility.png";
 import google from "../../assets/search.png";
-import search_bar from "../../assets/search_bar.png";
 import facebook from "../../assets/f_logo.png";
 
 const MainPage = () => {
@@ -57,11 +55,11 @@ const MainPage = () => {
           <Nav />
         </div>
 
-        <section
-          className="py-3 py-md-5 py-xl-8 mx-auto"
-          style={{ maxWidth: 1040 }}
-        >
-          <div className="container d-flex flex-column flex-lg-row gap-5">
+        <section className="py-3 py-md-5 py-xl-8 mx-auto">
+          <div
+            style={{ maxWidth: 1040 }}
+            className="container d-flex flex-column flex-lg-row gap-5 px-0"
+          >
             <div className="flex-fill">
               <Card />
             </div>

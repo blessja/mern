@@ -13,7 +13,7 @@ const HomePage = () => {
   const fetchPrivateDate = async () => {
     try {
       const response = await fetch(
-        "https://mern-1-s1dp.onrender.com/api/private",
+        "https://mern-2-lu3d.onrender.com/api/private",
         {
           method: "GET",
           headers: {
@@ -33,7 +33,7 @@ const HomePage = () => {
       }
     } catch (error) {
       localStorage.removeItem("auth");
-      navigate("/login");
+      navigate("/");
       return Notify("Internal server error", "error");
     }
   };
